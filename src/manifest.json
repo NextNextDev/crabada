@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+
+    "name": "__MSG_extName__",
+    "version": "1.0",
+    "description": "__MSG_extDescription__",
+    "permissions": [],
+    "author": "NextNextDev <nextnextdev@gmail.com>",
+    "background": {
+        "scripts": ["background.bundle.js"],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://play.crabada.com/mine/start-looting"],
+            "run_at": "document_end",
+            "js": ["content.bundle.js"]
+        }
+    ],
+    "default_locale": "en",
+    "icons": {
+        "16": "icons/16.png",
+        "48": "icons/48.png",
+        "128": "icons/128.png"
+    },
+    "web_accessible_resources": ["*.html", "*.png", "*.eot", "*.woff", "*.woff2", "*.ttf", "*.svg"]
+}

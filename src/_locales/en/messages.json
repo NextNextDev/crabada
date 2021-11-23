@@ -1,0 +1,9 @@
+{
+    "extName": {
+        "message": "Crabada",
+        "description": "Extension name."
+    },
+    "extDescription": {
+        "message": "Auto attack"
+    }
+}

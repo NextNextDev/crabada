@@ -1,0 +1,53 @@
+{
+  "name": "crabada",
+  "version": "1.0.0",
+  "description": "crabada attacker",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "watch": "cross-env NODE_ENV=development webpack --mode=development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NextNextDev/crabada.git"
+  },
+  "browserList": "> 0.25%, not dead",
+  "keywords": [
+    "js",
+    "extension"
+  ],
+  "author": "NextNextDev <nextnextdev@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://nextnextdev.com/",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^9.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.6",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "optimize-css-assets-webpack-plugin": "^6.0.0",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.2",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.38.1",
+    "webpack-chrome-extension-reloader": "^1.3.0",
+    "html-loader": "^2.1.2",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.14.0",
+    "@interactjs/actions": "^1.10.11",
+    "@interactjs/auto-start": "^1.10.11",
+    "@interactjs/dev-tools": "^1.10.11",
+    "@interactjs/interact": "^1.10.11",
+    "@interactjs/modifiers": "^1.10.11",
+    "interactjs": "^1.10.11"
+  }
+}
